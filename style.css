@@ -1,0 +1,121 @@
+/*
+	Syntax for CSS Styling;
+
+	Selector {
+		property: value;
+	}
+*/
+
+/*
+	In CSS we have SPECIFICITY RULE
+	- Id - Highest Priority
+	- Class
+	- Element/Tag
+	- Universal (*) - Lowest Priority
+
+*/
+
+/*
+	Bootstrap provide set of colors that convey meaning or visual indication:
+	 - primary (blue)
+	 - secondary (gray)
+	 - success (green)
+	 - warning (yellow)
+	 - danger (red)
+	 - info (light blue)
+	 - dark (black)
+	 - light (white)
+
+*/
+
+/*
+	Bootstrap Spaces
+
+	Property:
+		m => margin (add space outside the element)
+		p => padding (add space within the element)
+	
+	Sides:
+		t => top
+		b => buttom
+		r => right
+		l => left
+		x => x-axis (left & right)
+		y => y-axis (top & bottom)
+
+	Sizes:
+		0 => removing the spaces (margin or padding)
+		1 to 5 => setting margin on given numeric length.
+		auto => set the margin based on the available space of the container
+
+*/
+
+/* Universal (*) selector - Selects all the HTML elements */
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/* Element/Tag Selector (<tagName>) - Select a specific HTML element using tag name  */
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+/* Id selector (#idName) - use the id attribute to select an element */
+#landing {
+	/* vh => viewport height which is relative to the current viewing port. */
+	height: 100vh;
+	/* 
+		center the content vertically using "flexbox"
+			=> flexbox allow us to have efficiently layout, align and distribute spaces among items in the container. 
+	 */
+	display: flex;
+	/* "flex-direction" establishes the main-axis; "column" arrange container element from top to buttom. */
+	flex-direction: column;
+	/* "justify-content" defines the alignment along the main-axis */
+	justify-content: center;
+	/* "align-items" items are laid out along the cross axis (perpendicular to main axis) */
+	align-items: center;
+}
+
+/* Class selector (.className) - use to select all elements that belongs to a particular class attribute. */
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	/* center the content vertically using flexbox */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	border-radius: 6px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	color: #007bff;
+}
+
+.tools {
+	padding: 25px;
+	height: 200px;
+	border: 5px solid #f2f2f2;
+	margin: 20px;
+	width: 75%;
+	color: white;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+

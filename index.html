@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- 
+	We use "ctrl" + "/" to create a comment.
+		- "Comments" are useful fro proper documentation.
+		- It is ignored by the browser and do not show as a text.
+-->
+
+<!-- Tells the browser to read the contents of the file as HTML -->
+<html>
+	<!-- Contains details about the HTML file which is not visible in the browser -->
+	<head>
+		<!-- 
+			- specifies the encoding of the browser
+			- "utf-8" is the most common character encoding for www.
+		-->
+		<meta charset="utf-8">
+		<!-- 
+			- allow us to have responsive web page.
+			- the webpage will follow the width of the viewing device (mobile, tablet, desktop, etc.)
+		-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- sets the title of the website which is visible in the browser tab -->
+		<title>Angelito Quiambao | Web Developer Portfolio</title>
+
+		<!-- Google Fonts | Montserrat Semi-bold & Roboto Regular -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<!-- contains the actual content of the HTML file that are visible in the web browser. -->
+	<body>
+
+
+		<!-- Start of Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav" aria-controls="portfolio-nav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="portfolio-nav">
+		    <ul class="navbar-nav mx-auto">
+		     	<li class="nav-item">
+ 					<a href="#landing" class="nav-link"> Home </a>
+ 				</li>
+ 				<li class="nav-item">
+ 					<a href="#gallery" class="nav-link"> Gallery </a>
+ 				</li>
+
+		    </ul>
+		  </div>
+		</nav>
+		<!-- End of Navbar -->
+
+		<!-- 
+			- "div" defines a division or section in HTML.
+			- "class" is an attribute to name our "div" and can be used to multiple HTML elements.
+			- creates a wrapper/container for our layout. 
+
+			Two Containers of Bootstrap:
+			- Class "container" sets a max-width, hence the space at the sides.
+			- Class "container-fluid" creates a fluid layout which will make our layout span the whole width of the screen.
+		-->
+		<div class="container-fluid">
+
+			<!-- 
+				- "section" is similar with "div" but only follows "semantic HTML"
+				- "id" is an attribute to name our section and it must be unique (can only be used on one HTML element).
+			 -->
+
+			<!-- Start of landing section -->
+			<section class="jumbotron text-center mt-3" id="landing">
+
+				<!-- This is used to create heading text -->
+				<h1>Angelito Quiambao</h1>
+				<!-- Change this one later -->
+				<h4>Full Stack Web Developer</h4>
+
+				<!-- Defines a paragraph -->
+				<p>Hi! My name is Tolits and I love building things from scratch.</p>
+
+				<!-- To embed/insert an image in our HTML -->
+				<img src="images/avatar.jpg" class="img-fluid rounded-circle" />
+
+			</section>
+			<!-- End of landing section -->
+
+			<!-- Start of gallery section -->
+			<section id="gallery" class="text-center bg-dark mb-3">
+
+				<div class="tools">
+					<h2>Languages I Speak</h2>
+
+					<!-- To create an unordered list -->
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul>
+				</div>
+
+				<div class="tools">
+					<h2>Tools I Use</h2>
+					<ul>
+						<li>Git Bash / Terminal</li>
+						<li>Sublime Text</li>
+						<li>Github</li>
+						<li>Google Chrome</li>
+					</ul>
+				</div>
+
+			</section>
+			<!-- End of gallery section -->
+		</div>
+
+		<!-- Bootstap JavaScript Bundel with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+
